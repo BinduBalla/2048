@@ -1,0 +1,44 @@
+*,html{
+    font-size: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: $bgColor;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 19px;
+    line-height: 1.875rem;
+}
+
+h1{
+      font-size: $h1-font-size;
+        font-weight: bold;
+    }
+
+a, a:hover, a:active, a:visited, a:link{
+  color: black;
+}
+
+
+.flex {
+    display: flex;
+  
+    &-jc-sb {
+      justify-content: space-between;
+    }
+  
+    &-jc-c {
+      justify-content: center;
+    }
+
+    &-jc-sa{
+      justify-content: space-around;
+    }
+  
+    &-ai-c {
+      align-items: center;
+    }
+  }
+

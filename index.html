@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048</title>
+    <link rel="shortcut icon" href="2048_logo.svg.png" type="image/x-icon">
+    <link rel="stylesheet" href="/dist/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header flex flex-jc-sb">
+            <h1>2048</h1>
+            <div class="score_board flex">
+                <div class="score">
+                        <span class="score_label">SCORE</span>
+                        <span class="score_value">0</span>
+                </div>
+                <div class="best">
+                        <span class="best_label">BEST</span>
+                        <span class="best_value">0</span>
+                </div>
+            </div>
+        </header>
+        <div class="game_rules flex flex-jc-sb">
+            <p>
+                Join the tiles, get to <strong>2048!</strong>
+                <br>
+                <strong><a href="#instructions">How to play<span>&#8594;</span></a></strong>
+            </p>
+            <button class="btn" onclick="newGame()">New Game</button>
+        </div>
+        
+        <div class="grid-container">
+            <div class="grid-0" id="grid-0-0"></div>
+            <div class="grid-1" id="grid-0-1"></div>
+            <div class="grid-2" id="grid-0-2"></div>
+            <div class="grid-3" id="grid-0-3"></div>
+
+            <div class="grid-4" id="grid-1-0"></div>
+            <div class="grid-5" id="grid-1-1"></div>
+            <div class="grid-6" id="grid-1-2"></div>
+            <div class="grid-7" id="grid-1-3"></div>
+
+            <div class="grid-8" id="grid-2-0"></div>
+            <div class="grid-9" id="grid-2-1"></div>
+            <div class="grid-10" id="grid-2-2"></div>
+            <div class="grid-11" id="grid-2-3"></div>
+
+            <div class="grid-12" id="grid-3-0"></div>
+            <div class="grid-13" id="grid-3-1"></div>
+            <div class="grid-14" id="grid-3-2"></div>
+            <div class="grid-15" id="grid-3-3"></div>
+
+            <div class="gameOver">
+                <p class="textOverGrid"></p>
+                <button class="button" onclick="renewedGame()">Try Again</button>
+                <button class="buttonn" onclick="removeStyles()">Keep Going</button>
+            </div>
+        </div>
+
+
+        <div class="rules">
+            <p id="instructions">
+            <strong>HOW TO PLAY:</strong> Use your <strong>arrow keys</strong> to move the tiles. Tiles 
+            with the same number <strong>merge into one</strong> when they touch. Add 
+            them up to reach <strong>2048!</strong>
+        </p>
+        </div>
+
+    </div>
+
+    <script src="/app/js/script.js"></script>
+    <script src="/app/js/styles.js"></script>
+
+</body>
+
+</html>

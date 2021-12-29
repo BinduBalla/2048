@@ -1,0 +1,51 @@
+.grid-container{
+    display: grid;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    grid-template-columns: 106px 106px 106px 106px;        
+    grid-template-rows: 106px 106px 106px 106px;        
+    padding: 15px;
+    justify-content: center;
+    background-color:#bbada0;
+    width: 500px;
+    height: 500px;
+    border-radius: 5px;
+    margin: auto;
+    position: relative;
+}
+.textOverGrid{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.gameOver{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+}
+.button,.buttonn{
+    position: absolute;
+    background: $btn-color;
+    color: white;
+    font-weight: bold;
+    padding: 1px 20px;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 3px;
+    top: 50%;
+    left: 40%;
+    visibility: hidden;
+}
+.grid-0,.grid-1,.grid-2,.grid-3,
+.grid-4,.grid-5,.grid-6,.grid-7,
+.grid-8,.grid-9,.grid-10,.grid-11,
+.grid-12,.grid-13,.grid-14,.grid-15{
+    background-color:$tile-color;
+    border-radius: inherit;
+}
+
+
